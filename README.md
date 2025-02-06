@@ -18,7 +18,9 @@ default     ingress-http                nginx   nginx.test.com                  
 default     srv-my-service1--sodev-cc   nginx   srv-my-service1---default.sodev-cc   10.106.239.94   80      14d
 
 ```
+## Kubernetes版本
 
+k8s >= 1.30
 
 ## 发布配置
 
