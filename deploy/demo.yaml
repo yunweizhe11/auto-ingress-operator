@@ -4,7 +4,7 @@ metadata:
   name: sodev-cc
   namespace: ingress-nginx
   annotations:
-    env: "letsencrypt-prod"
+    autoingress: true
 spec:
   ingressClassName: nginx
   rootDomain: sodev-cc
