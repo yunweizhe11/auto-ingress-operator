@@ -3,6 +3,8 @@ kind: AutoIngress
 metadata:
   name: sodev-cc
   namespace: ingress-nginx
+  annotations:
+    env: "letsencrypt-prod"
 spec:
   ingressClassName: nginx
   rootDomain: sodev-cc
