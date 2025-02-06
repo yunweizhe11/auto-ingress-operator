@@ -1,0 +1,20 @@
+# permissions for end users to view autoingresses.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: autoingress-viewer-role
+rules:
+- apiGroups:
+  - network.operator.com
+  resources:
+  - autoingresses
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - network.operator.com
+  resources:
+  - autoingresses/status
+  verbs:
+  - get

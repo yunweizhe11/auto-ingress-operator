@@ -1,0 +1,12 @@
+apiVersion: network.operator.com/v1palpha1
+kind: AutoIngress
+metadata:
+  name: sodev-cc
+  namespace: ingress-nginx
+spec:
+  ingressClassName: nginx
+  rootDomain: sodev-cc
+  servicePrefixes:
+    - "web-"
+    - "srv-"
+  tlsSecretName: ""

@@ -1,0 +1,19 @@
+domain: operator.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: auto-ingress-operator
+repo: github.com/yunweizhe11/auto-ingress-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: operator.com
+  group: network
+  kind: AutoIngress
+  path: github.com/yunweizhe11/auto-ingress-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"

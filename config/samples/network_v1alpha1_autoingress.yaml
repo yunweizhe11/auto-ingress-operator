@@ -1,0 +1,6 @@
+apiVersion: network.operator.com/v1alpha1
+kind: AutoIngress
+metadata:
+  name: autoingress-sample
+spec:
+  # Add fields here
