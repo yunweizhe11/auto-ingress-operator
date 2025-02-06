@@ -48,6 +48,8 @@ kind: AutoIngress
 metadata:
   name: sodev-cc
   namespace: ingress-nginx
+  annotations:
+    autoingress: true
 spec:
   ingressClassName: nginx
   rootDomain: sodev-cc
